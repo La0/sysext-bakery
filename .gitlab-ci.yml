@@ -1,0 +1,12 @@
+stages:
+  - build
+
+build-alloy:
+  stage: build
+
+  artifacts:
+    paths:
+      - alloy.raw
+
+  script:
+    - ./bakery.sh alloy v1.16.0
